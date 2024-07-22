@@ -1,0 +1,116 @@
+@font-face {
+  font-family: peyda;
+  src: url(../fonts/woff/PeydaWeb-Regular.woff) format(woff);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: peyda;
+}
+.card {
+  width: 30rem;
+  height: 16rem;
+  display: flex;
+  position: relative;
+  margin: 50px auto;
+  border-radius: 6px;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(
+    180deg,
+    rgb(65, 82, 160) 0%,
+    rgb(208, 201, 193) 100%,
+    rgb(208, 201, 193) 100%
+  );
+}
+
+.card__row {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.25rem 2.25rem 0 2.25rem;
+}
+
+.card__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+}
+
+.dropdown__trigger {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.dropdown:hover .dropdown__menu {
+  display: block;
+}
+
+.dropdown__menu {
+  display: none;
+  position: absolute;
+  min-width: 10rem;
+  padding-inline: 0.75rem;
+  top: 2rem;
+  list-style: none;
+  right: 1rem;
+  border-radius: 0.75rem;
+  background-color: #fff;
+}
+
+.dropdown__menu-item {
+  gap: 0.5rem;
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  padding-block: 0.75rem;
+}
+
+.dropdown__menu-item:not(:last-child) {
+  border-bottom: 1px solid #e2edff;
+}
+
+.dropdown__menu-label {
+  color: var(--Black-black-100, #c3c5c9);
+  text-align: right;
+
+  font-family: Peyda;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+ul li:last-child {
+  color: #eb482b;
+}
+.card__info-inventory {
+  font-size: 1rem;
+  color: #fff;
+}
+
+.card__info-amount {
+  font-size: 3.5rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+.card__number {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.2rem 2rem 0.2rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  color: #fff;
+  font-size: 2.8rem;
+}
